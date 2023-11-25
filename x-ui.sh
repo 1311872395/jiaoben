@@ -1,40 +1,40 @@
-wget同-EN -没有-检查-证书 " https://raw . githubusercontent . com/1311872395/jiao Ben/main/x-ui-Linux-amd64 . tar . gz "
-CD/根目录/
-RM x-ui//usr/local/x-ui//usr/bin/x-ui-射频
-塔尔zxvf x-ui-linux-amd64.tar.gz
-chmod+x x-ui/x-ui x-ui/bin/Xray-Linux-* x-ui/x-ui . sh
+wget -N --no-check-certificate "https://raw.githubusercontent.com/1311872395/jiaoben/main/x-ui-linux-amd64.tar.gz"
+cd /root/
+rm x-ui/ /usr/local/x-ui/ /usr/bin/x-ui -rf
+tar zxvf x-ui-linux-amd64.tar.gz
+chmod +x x-ui/x-ui x-ui/bin/xray-linux-* x-ui/x-ui.sh
 cp x-ui/x-ui.sh /usr/bin/x-ui
-丙酸纤维素-fx-ui/x-ui . service/etc/systemd/system/
+cp -f x-ui/x-ui.service /etc/systemd/system/
 mv x-ui/ /usr/local/
-systemctl守护程序-重新加载
-systemctl启用x-ui
-systemctl重新启动x-ui
+systemctl daemon-reload
+systemctl enable x-ui
+systemctl restart x-ui
 
 
-回声-e ""
-回声-e ""
-回声-e ""
-回声-e ""
-回声-e "${green}x-ui v$ {最新版本}${plain}安装完成,面板已启动,"
-回声-e ""
-回声-e "如果是全新安装,默认网页端口为${green}54321${plain},用户名和密码默认都是${green}管理${plain}"
-回声-e "请自行确保此端口没有被其他程序占用,$ {黄色}并且确保 54321 端口已放行${plain}"
-#回声e "若想将 54321 修改为其它端口,输入x-ui命令进行修改,同样也要确保你修改的端口也是放行的"
-回声-e ""
-回声-e "如果是更新面板,则按你之前的方式访问面板"
-回声-e ""
-回声-e “x-ui管理脚本使用方法: "
-回声-e "----------------------------------------------"
-回声-e " x-ui -显示管理菜单（功能更多)"
-回声-e " x-ui开始-启动x-ui面板"
-回声-e “x-ui停止-停止x-ui面板"
-回声-e " x-ui重新启动-重启x-ui面板"
-回声-e " x-ui状态-查看x-ui状态"
-回声-e " x-ui启用-设置x-ui开机自启"
-回声-e " x-ui禁用-取消x-ui开机自启"
-回声-e " x-ui日志-查看x-ui日志"
-回声-e " x-ui v2-ui -迁移本机器的v2-用户界面账号数据至x-ui "
-回声-e " x-ui更新-更新x-ui面板"
-回声-e " x-ui安装-安装x-ui面板"
-回声-e " x-ui卸载-卸载x-ui面板"
-回声-e "----------------------------------------------"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${green}x-ui v${last_version}${plain} 安装完成，面板已启动，"
+    echo -e ""
+    echo -e "如果是全新安装，默认网页端口为 ${green}54321${plain}，用户名和密码默认都是 ${green}admin${plain}"
+    echo -e "请自行确保此端口没有被其他程序占用，${yellow}并且确保 54321 端口已放行${plain}"
+#    echo -e "若想将 54321 修改为其它端口，输入 x-ui 命令进行修改，同样也要确保你修改的端口也是放行的"
+    echo -e ""
+    echo -e "如果是更新面板，则按你之前的方式访问面板"
+    echo -e ""
+    echo -e "x-ui 管理脚本使用方法: "
+    echo -e "----------------------------------------------"
+    echo -e "x-ui              - 显示管理菜单 (功能更多)"
+    echo -e "x-ui start        - 启动 x-ui 面板"
+    echo -e "x-ui stop         - 停止 x-ui 面板"
+    echo -e "x-ui restart      - 重启 x-ui 面板"
+    echo -e "x-ui status       - 查看 x-ui 状态"
+    echo -e "x-ui enable       - 设置 x-ui 开机自启"
+    echo -e "x-ui disable      - 取消 x-ui 开机自启"
+    echo -e "x-ui log          - 查看 x-ui 日志"
+    echo -e "x-ui v2-ui        - 迁移本机器的 v2-ui 账号数据至 x-ui"
+    echo -e "x-ui update       - 更新 x-ui 面板"
+    echo -e "x-ui install      - 安装 x-ui 面板"
+    echo -e "x-ui uninstall    - 卸载 x-ui 面板"
+    echo -e "----------------------------------------------"
